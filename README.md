@@ -1,41 +1,8 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img alt="Ziad AlHusseiny — iOS Developer" src="./assets/hero-light.svg" width="100%">
+  <img alt="Ziad AlHusseiny — Software Engineer" src="./assets/hero-light.svg" width="100%">
 </picture>
-
-<br>
-
-### Hey, I'm Ziad
-
-I build native iOS apps with Swift and SwiftUI. I like small apps with one clear job, done properly: real offline behaviour, widgets that earn their place on the home screen, and no dark patterns at the paywall.
-
-Right now I'm building an app for early risers, and taking on freelance iOS work.
-
-<br>
-
-### Toolbox
-
-![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-0071E3?style=flat-square&logo=swift&logoColor=white)
-![Xcode](https://img.shields.io/badge/Xcode-1575F9?style=flat-square&logo=xcode&logoColor=white)
-![SwiftData](https://img.shields.io/badge/SwiftData-FF6B35?style=flat-square&logo=apple&logoColor=white)
-![HealthKit](https://img.shields.io/badge/HealthKit-FF2D55?style=flat-square&logo=apple&logoColor=white)
-![WidgetKit](https://img.shields.io/badge/WidgetKit-5856D6?style=flat-square&logo=apple&logoColor=white)
-![StoreKit](https://img.shields.io/badge/StoreKit-34C759?style=flat-square&logo=apple&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-
-<br>
-
-### What I'm up to
-
-| | |
-|---|---|
-| 🌅 | Building a wake-up app for early risers — SwiftUI, AlarmKit, HealthKit |
-| 💼 | Open to freelance iOS work |
-| 🌱 | Going deep on AlarmKit, Live Activities, and StoreKit 2 |
-| 💬 | Ask me about SwiftUI, widgets, or shipping to the App Store |
 
 <br>
 
