@@ -114,7 +114,10 @@ def render(stats, theme_name):
 
     rows = (len(tiles) + 2) // 3
     W = 840
-    H = 112 + rows * 74 + 74
+    last_label_y = 82 + (rows - 1) * 74 + 20
+    divider_y = last_label_y + 30
+    by = divider_y + 26
+    H = by + 40
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
@@ -146,8 +149,7 @@ def render(stats, theme_name):
         parts.append("</g>")
 
     # language bar
-    by = 112 + rows * 74 + 46
-    parts.append(f'<line x1="30" y1="{by - 26}" x2="{W - 30}" y2="{by - 26}" stroke="{t["line"]}" stroke-width="1"/>')
+    parts.append(f'<line x1="30" y1="{divider_y}" x2="{W - 30}" y2="{divider_y}" stroke="{t["line"]}" stroke-width="1"/>')
     bar_w = W - 60
     cursor = 30.0
     total_pct = sum(p for _, _, p in stats["langs"]) or 1
