@@ -73,22 +73,21 @@ def summarise(user):
         "prs": contrib["totalPullRequestContributions"],
         "issues": contrib["totalIssueContributions"],
         "langs": [
-            (name, v["color"] or "#8b949e", round(v["size"] / total * 100, 1))
-            for name, v in top
+            (name, GRAY_RAMP[i % len(GRAY_RAMP)], round(v["size"] / total * 100, 1))
+            for i, (name, v) in enumerate(top)
         ],
     }
 
 
 THEMES = {
-    "dark": {
-        "text": "#f4f7ff", "muted": "#8fa2d8", "accent": "#ff9e57",
-        "panel": "#0d1428", "line": "#1e2a4d",
-    },
-    "light": {
-        "text": "#1b2340", "muted": "#5b678a", "accent": "#d97a3c",
-        "panel": "#ffffff", "line": "#e3e8f2",
+    "mono": {
+        "text": "#ffffff", "muted": "#8a8a8a", "accent": "#c8c8c8",
+        "panel": "#0b0b0b", "line": "#242424",
     },
 }
+
+# Language bars are drawn on a grayscale ramp so the card stays monochrome.
+GRAY_RAMP = ["#ffffff", "#c4c4c4", "#909090", "#5f5f5f", "#3b3b3b"]
 
 
 def esc(s):
@@ -176,11 +175,10 @@ def render(stats, theme_name):
 def main():
     stats = summarise(fetch())
     os.makedirs("assets", exist_ok=True)
-    for theme in THEMES:
-        path = f"assets/stats-{theme}.svg"
-        with open(path, "w", encoding="utf-8") as fh:
-            fh.write(render(stats, theme))
-        print(f"wrote {path}")
+    path = "assets/stats.svg"
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(render(stats, "mono"))
+    print(f"wrote {path}")
     print(json.dumps(stats, indent=2))
 
 
