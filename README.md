@@ -41,10 +41,11 @@ Right now I'm building an app for early risers, and taking on freelance iOS work
 
 ### Stats
 
-<p align="center">
-  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Ziad-AlHusseiny&show_icons=true&hide_border=true&border_radius=12&title_color=FF9E57&icon_color=FF9E57&text_color=9aa7c7&bg_color=00000000">
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ziad-AlHusseiny&layout=compact&hide_border=true&border_radius=12&title_color=FF9E57&text_color=9aa7c7&bg_color=00000000">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg">
+  <img alt="GitHub statistics" src="./assets/stats-light.svg" width="100%">
+</picture>
 
 <br>
 
