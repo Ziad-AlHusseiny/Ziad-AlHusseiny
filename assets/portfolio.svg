@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220" role="img" aria-label="Portfolio: ziad-al-husseiny.pages.dev">
+  <title>Portfolio — ziad-al-husseiny.pages.dev</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="0.6" stop-color="#0c0c0c"/>
+      <stop offset="1" stop-color="#1e1e1e"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="220" rx="20"/></clipPath>
+    <clipPath id="btn"><rect x="902" y="82" width="238" height="56" rx="28"/></clipPath>
+    <style>
+      .k { font: 500 15px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif; fill:#8a8a8a; letter-spacing:3.4px; }
+      .u { font: 700 44px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif; fill:#ffffff; letter-spacing:-1px; }
+      .d { font: 400 18px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif; fill:#a8a8a8; }
+      .b { font: 600 18px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif; fill:#000000; }
+      .a1{ opacity:0; animation:up .9s cubic-bezier(.2,.9,.3,1) .2s forwards }
+      .a2{ opacity:0; animation:up .9s cubic-bezier(.2,.9,.3,1) .45s forwards }
+      .a3{ opacity:0; animation:up .9s cubic-bezier(.2,.9,.3,1) .7s forwards }
+      .a4{ opacity:0; animation:up .9s cubic-bezier(.2,.9,.3,1) .95s forwards }
+      @keyframes up { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+      .sh{ animation:sweep 4.5s ease-in-out 2s infinite }
+      @keyframes sweep { 0%{transform:translateX(-140px)} 45%,100%{transform:translateX(400px)} }
+      .ar{ animation:nudge 2.2s ease-in-out 1.6s infinite }
+      @keyframes nudge { 0%,100%{transform:translateX(0)} 50%{transform:translateX(5px)} }
+      .dot{ animation:pulse 2.4s ease-in-out infinite }
+      @keyframes pulse { 0%,100%{opacity:.35} 50%{opacity:1} }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="220" fill="url(#bg)"/>
+    <circle cx="1020" cy="110" r="220" fill="url(#glow)"/>
+
+    <g class="a1">
+      <circle class="dot" cx="66" cy="62" r="5" fill="#ffffff"/>
+      <text class="k" x="84" y="67">PORTFOLIO · LIVE</text>
+    </g>
+    <g class="a2"><text class="u" x="60" y="124">ziad-al-husseiny.pages.dev</text></g>
+    <g class="a3"><text class="d" x="62" y="164">Web apps, landing pages, reels and design. In English and Arabic.</text></g>
+
+    <g class="a4">
+      <rect x="902" y="82" width="238" height="56" rx="28" fill="#ffffff"/>
+      <g clip-path="url(#btn)">
+        <rect class="sh" x="902" y="82" width="90" height="56" fill="url(#shine)"/>
+      </g>
+      <text class="b" x="946" y="116">Visit the site</text>
+      <g class="ar"><path d="M1088 110h22m-8-8 8 8-8 8" stroke="#000000" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </g>
+
+    <rect x="0" y="219" width="1200" height="1" fill="url(#edge)"/>
+    <rect width="1200" height="220" filter="url(#grain)" opacity="0.08"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="219" rx="19.5" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+</svg>
